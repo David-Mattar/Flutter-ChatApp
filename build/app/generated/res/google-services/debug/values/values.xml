@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">929350984214-fj5dunvbbmq1li1lvqo251ffcj5qjn66.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">929350984214</string>
+    <string name="google_api_key" translatable="false">AIzaSyBtZJWjrAisu9WyW1spdHZcBhCAOsV3Wyc</string>
+    <string name="google_app_id" translatable="false">1:929350984214:android:43dc31bdd1f480c0eecb37</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBtZJWjrAisu9WyW1spdHZcBhCAOsV3Wyc</string>
+    <string name="google_storage_bucket" translatable="false">flutterchatproject-decc4.appspot.com</string>
+    <string name="project_id" translatable="false">flutterchatproject-decc4</string>
+</resources>
