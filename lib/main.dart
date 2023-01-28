@@ -59,6 +59,10 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        primaryColor: Constants().primaryColor,
+        scaffoldBackgroundColor: Colors.white
+      ),
       home: _isSinedIn ? const HomePage() : const LoginPage(),
       
     );
