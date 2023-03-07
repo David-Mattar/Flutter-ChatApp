@@ -41,18 +41,31 @@ class _LoginPageState extends State<LoginPage> {
                         color:Theme.of(context).primaryColor,
                       ),                      
                   ),
+                  validator: (val){
+                    if(val!.length<6){
+                      return "Password must be at least 6 characters";
+                    }
+                    else{
+                      return null;
+                    }
+                  },
                   onChanged: (val){
                     setState(() {
                       email = val;
-                      print(email);
                     });
                   },
+
+                  validator: (val){
+                    return RegExp("r^[a-zA-Z0-9.a-zA-Z0-9.!#\$%&'+-/=?^_`{|}~]+@[a-zA-Z]+").hasMatch(val!) ? null : "Please, enter a valid email";
+                  },
                 ),
+                
 
                 const SizedBox(height: 15), 
 
                 // Password text box
                 TextFormField(
+                  obscureText: true,
                   decoration: textInputDecoration.copyWith(
                     labelText: "Password",
                     prefixIcon:  
@@ -64,13 +77,9 @@ class _LoginPageState extends State<LoginPage> {
                   onChanged: (val){
                     setState(() {
                       password = val;
-                      print(password);
                     });
                   },
                 ),
-
-
-
               ],
             ),
           ),
